@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import PregencyTool from "../components/Pregency-Tool.js";
 import PregencyWeek from "../components/Pregency-Week.js";
+import ContactUs from "./auth/Contact.js";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -60,55 +61,60 @@ const HomePage = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="h-screen w-full flex flex-col justify-center items-start px-16 bg-cover bg-center relative overflow-hidden">
-        {/* Background Image */}
-        <img
-          src="\Everest-Singalila-Trek.jpg"
-          alt="Everest Singalila Trek"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+     <div className="h-screen w-full flex flex-col justify-center items-start px-8 sm:px-16 bg-cover bg-center relative overflow-hidden mt-[-15px]">
+  {/* Background Image */}
+<img
+  src="\pre30.jpg"
+  alt="Everest Singalila Trek"
+  className="absolute inset-0 w-full h-[250px] sm:h-[300px] md:h-[550px] lg:h-auto object-cover filter brightness-150 md:object-cover"
+/>
 
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
-        {/* Welcome Text */}
-        <div className="relative z-10 text-left text-white max-w-[50%] pl-10">
-          <h1
-            className="text-6xl font-extrabold mb-4 leading-tight text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.6)]"
-            style={{ fontFamily: "'Dancing Script', cursive" }}
-          >
-            Welcome to <br />
-            <span className="text-[#D4D700]">TummyTales</span>
-          </h1>
-          <p
-            className="text-2xl italic font-semibold drop-shadow-md"
-            style={{ fontFamily: "'Dancing Script', cursive" }}
-          >
-            Your Pregnancy Journey Starts Here
-          </p>
-        </div>
 
-        {/* Information Box */}
-        <div className="absolute right-20 top-1/3 bg-[#f7f7c2] text-black p-6 w-[35%] shadow-lg text-lg">
-          <p style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Pregnancy is a beautiful journey that should be cherished. For South
-            Asians in the United States, medical care and cultural practices often feel poles apart – we bridge that gap for you. By blending South Asian heritage with Western medicine, we create a seamless and supportive experience.
-          </p>
-          <p className="mt-4" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            We offer guidance that blends both worlds, ensuring that no sort of dialogue gets lost. You can expect a touch of familiarity within each step of your special chapter. All you have to do is focus on growing your family.
-          </p>
-        </div>
+  {/* Overlay for text readability */}
+  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
-        {/* Curved Bottom Effect */}
-        <div className="absolute bottom-0 left-0 w-full">
-          <svg viewBox="0 0 1440 320" className="w-full">
-            <path
-              fill="#f7f7c2"
-              d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,282.7C1120,299,1280,277,1360,266.7L1440,256V320H0Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
+  {/* Welcome Text */}
+ <div class="relative z-10 text-left text-white max-w-full sm:max-w-[50%] pl-8 sm:pl-10 md:mt-[-450px] lg:mt-[-20px] md:ml-[-50px] mt-[-400px] text-xl ml-[-40px]">
+    <h1
+      className=" text-2xl sm:text-6xl font-extrabold mb-4 leading-tight text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.6)]"
+      style={{ fontFamily: "'Dancing Script', cursive" }}
+    >
+      Welcome to <br />
+      <span className="text-red-500">TummyTales</span>
+    </h1>
+    <p
+      className="text-lg sm:text-2xl italic font-semibold drop-shadow-md"
+      style={{ fontFamily: "'Dancing Script', cursive" }}
+    >
+      Your Pregnancy Journey Starts Here
+    </p>
+  </div>
+
+  {/* Information Box */}
+  <div className="">
+ <div class="absolute right-5 sm:right-20 top-1/3 bg-[#bb6528] text-white p-4 sm:p-6 w-[90%]  sm:w-[35%] shadow-lg text-lg rounded-[30px] h-[435px]  sm:h-[100px] md:h-[430px]  md:w-[650px] lg:h-[400px] lg:w-[450px] mt-[30px]     lg:mt-[-50px] md:mt-[220px] lg:ml-[50px] !md:ml-[150px] md:liner">
+    <p className="text-[14.1px]    md:text-[20px] lg:text-[18px]  md:leading-[2.10] lg:leading-[1.7] lg:font-serif " >
+      Pregnancy is a beautiful journey that should be cherished. For South
+      Asians in the United States, medical care and cultural practices often feel poles apart – we bridge that gap for you. By blending South Asian heritage with Western medicine, we create a seamless and supportive experience.
+    </p>
+    <p className="mt-4 text-[14.1px]    md:text-[20px] lg:text-[18px]  md:leading-[2.12] lg:leading-[1.7] lg:font-serif" >
+      We offer guidance that blends both worlds, ensuring that no sort of dialogue gets lost. You can expect a touch of familiarity within each step of your special chapter. All you have to do is focus on growing your family.
+    </p>
+  </div>
+  </div>
+
+  {/* Curved Bottom Effect */}
+  <div className="absolute bottom-0 left-0 w-full">
+    <svg viewBox="0 0 1440 320" className="w-full">
+      <path
+        fill="rgb(166,123,91)"
+        d="M0,288L80,266.7C160,245,320,203,480,208C640,213,800,267,960,282.7C1120,299,1280,277,1360,266.7L1440,256V320H0Z"
+      ></path>
+    </svg>
+  </div>
+</div>
+
 <PregencyWeek/>
 
 <PregencyTool/>
@@ -207,7 +213,7 @@ const HomePage = () => {
 <div className="flex flex-wrap justify-center gap-10 px-15 py-10 bg-gradient-to-br from-pink-200 to-blue-100 mt-0 gap-x-10">
   {/* Silver Package */}
  <div className="flex flex-col md:flex-row items-center bg-white rounded-xl p-6 shadow-xl max-w-[800px] h-auto text-left hover:-translate-y-2 transition-transform duration-300 mx-auto space-y-6 md:space-y-0 md:space-x-6">
-  <img src="image2.jpg" alt="Silver Package" className="w-full md:w-[350px] h-[250px] object-cover rounded-lg" />
+  <img src="image2.jpg" alt="Silver Package" className="w-full md:w-[300px] h-[250px] object-cover rounded-lg" />
   <div className="flex flex-col items-start text-left w-full md:w-[250px]">
     <h1 className="text-xl font-semibold text-pink-400 mb-2">Silver</h1>
     <h4 className="text-base font-semibold text-gray-700 mb-4">
@@ -228,7 +234,7 @@ const HomePage = () => {
 
   {/* Gold Package */}
  <div className="flex flex-col md:flex-row items-center bg-white rounded-xl p-6 shadow-xl max-w-[800px] text-left hover:-translate-y-2 transition-transform duration-300 mx-auto space-y-6 md:space-y-0 md:space-x-6">
-  <img src="image1.jpg" alt="Gold Package" className="w-full md:w-[450px] h-[250px] object-cover rounded-lg" />
+  <img src="image1.jpg" alt="Gold Package" className="w-full md:w-[350px] h-[250px] object-cover rounded-lg" />
   <div className="flex flex-col w-full md:w-[250px]">
     <h1 className="text-xl font-semibold text-pink-400 mb-2 text-center md:text-left">Gold</h1>
     <h4 className="text-base font-semibold text-gray-600 mb-3 text-center md:text-left">
@@ -251,30 +257,36 @@ const HomePage = () => {
 </div>
  
 
-
+<ContactUs/>
 
 
 <div
-      className="relative w-full h-[400px] flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: 'url("/Image3.jpg")' }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      <div className="relative text-center text-white">
-        <h2 className="text-3xl font-bold mb-2">Subscribe to Our Newsletter</h2>
-        <p className="mb-4">Sign up with your email address to receive news and updates.</p>
-        <div className="flex justify-center items-center">
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="px-4 py-2 w-80 rounded-l-md text-black outline-none"
-          />
-          <button className="px-6 py-2 bg-transparent border border-white text-white rounded-r-md hover:bg-white hover:text-black transition">
-            Sign Up
-          </button>
-        </div>
-      </div>
-      
-    </div>
+  className="relative w-full h-[400px] sm:h-[350px] md:h-[400px] flex items-center justify-center bg-cover bg-center filter brightness-275"
+  style={{ backgroundImage: 'url("/baby-development.jpg")' }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+  <div className="relative text-center text-white px-4">
+    <h2 className="text-2xl sm:text-3xl font-bold mb-2">Subscribe to Our Newsletter</h2>
+    <p className="mb-4 text-sm sm:text-base  mt-2">
+      Sign up with your email address to receive news and updates.
+    </p>
+  <div className="flex flex-row sm:flex-row justify-center items-center mt-10">
+  <input
+    type="email"
+    placeholder="Email Address"
+    className="w-44 sm:w-80 px-4 py-2 rounded-l-md text-black outline-none mb-3 sm:mb-0"
+  />
+ <button className="w-full sm:w-auto px-6 py-2 bg-transparent border border-white text-white rounded-md sm:rounded-r-md hover:bg-white hover:text-black transition text-center mt-[-10px] sm:mt-0">
+  Sign Up
+</button>
+
+
+</div>
+
+
+  </div>
+</div>
+
     
     </div>
   );
