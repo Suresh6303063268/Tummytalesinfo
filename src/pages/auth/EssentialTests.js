@@ -125,15 +125,15 @@ const EssentialTests = () => {
 
 
       
-    <div className="bg-[#B9BE80] py-12 px-6">
-      <h2 className="text-center text-3xl font-bold text-white mb-6">
+    <div className="bg-[#f8e7f6] py-12 px-6">
+      <h2 className="text-center text-3xl font-bold mb-6">
         What you&apos;ll learn
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-6">
         {topics.map((topic, index) => (
           <div
             key={index}
-            className="text-center bg-[#A3A86A] w-[350px] rounded-lg p-4 shadow-md"
+            className="text-center bg-[#6b1357] w-[350px] rounded-lg p-4 shadow-md"
           >
             <div className="w-[320px] h-[220px] rounded-xl overflow-hidden shadow-lg mx-auto">
               <img
@@ -160,12 +160,12 @@ const EssentialTests = () => {
         ))}
       </div>
     </div>
-    <div className="min-h-screen flex items-center justify-center bg-[#b3b57a] p-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#f8d6f0] p-6">
       <div className="max-w-2xl w-full">
-        <h2 className="text-center text-3xl font-bold text-white relative">
+        <h2 className="text-center text-3xl text-[#fb2957]  font-bold relative">
           Course{" "}
-          <span className="relative px-2 bg-[#b3b57a] text-white">
-            <span className="absolute inset-0 border-2 border-white rounded-full -z-10"></span>
+          <span className="relative px-2 bg-[#f6d6ee]">
+            <span className="absolute inset-0 border-2 border-white text-[#fb2957]  rounded-full -z-10"></span>
             FAQ
           </span>
         </h2>
@@ -175,7 +175,7 @@ const EssentialTests = () => {
             <div key={index} className="border-t border-white">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left flex justify-between items-center py-4 text-white font-bold text-lg"
+                className="w-full text-left flex justify-between items-center py-4 text-[#fb2957] font-bold text-lg"
               >
                 {faq.question}
                 <span>{openIndex === index ? "−" : "+"}</span>

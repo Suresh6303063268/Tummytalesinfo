@@ -285,7 +285,7 @@ const ThaliPage = () => {
   "
                                 />
                                 <div className="relative z-10">
-                                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-center">
+                                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-[#ed3d89] text-center">
                                         {food.title}
                                     </h3>
                                     <ul className="list-disc list-inside text-sm sm:text-base space-y-2 leading-relaxed">
